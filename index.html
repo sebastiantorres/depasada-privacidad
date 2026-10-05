@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DePasada · Política de privacidad</title>
+<style>
+:root{--bg:#F5F5F3;--ink:#1D1D1F;--muted:#66666B;--accent:#BF4B33;--card:#fff;--line:#E6E6E3}
+@media (prefers-color-scheme:dark){:root{--bg:#151515;--ink:#EDEDEA;--muted:#A3A3A8;--accent:#E9775F;--card:#1E1E1E;--line:#2E2E2E}}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:720px;margin:0 auto;padding:32px 16px 64px}
+h1{font-size:1.8rem;margin:0 0 4px} .sub{color:var(--muted);margin:0 0 28px}
+h2{font-size:1.1rem;margin:32px 0 8px} a{color:var(--accent)} ul{padding-left:1.2em}
+</style>
+</head>
+<body><main>
+<h1>Política de privacidad de DePasada</h1>
+<p class="sub">Vigente desde el 5 de octubre de 2026 · app versión 0.11.0</p>
+<p>Esta política explica qué datos usa DePasada, la app para Android desarrollada por Sebastián Torres, para qué los usa y cómo podés controlarlos.</p>
+<h2>1. Para qué usamos los datos</h2>
+<p>DePasada permite guardar tareas y recibir avisos cuando te acercás a lugares donde podrías resolverlas. Podés crear y administrar tareas sin permitir ubicación ni notificaciones. Activar el recorrido y la detección de salidas es opcional.</p>
+<h2>2. Qué se guarda en tu teléfono</h2>
+<p>Guardamos los títulos de las tareas, su categoría, radio de aviso, estado, identificador local y tiempos de posposición o último aviso. También guardamos la última ubicación recibida y su fecha, los últimos lugares encontrados y el estado del recorrido. La ubicación se reemplaza al recibir otra: la app no mantiene un historial de tu trayectoria.</p>
+<p>Si guardás casa, trabajo u otros lugares, conservamos su nombre, coordenadas y radio, la modalidad de salida y regreso elegida, y el estado reciente de entrada o salida necesario para evitar avisos duplicados. No inferimos automáticamente tu casa ni trabajo.</p>
+<p>Guardamos la versión del aviso de ubicación aceptada y la fecha de aceptación. No hay cuenta ni sincronización con un servidor propio. El texto que ingresás puede contener datos personales; evitá incluir información sensible innecesaria.</p>
+<h2>3. Ubicación durante el recorrido</h2>
+<p>Luego de mostrarte un aviso y obtener tu aceptación y los permisos de Android, la app utiliza ubicación precisa para buscar lugares y generar alertas. Puede continuar en segundo plano o con la pantalla apagada mientras el recorrido esté activo; una notificación permanente permite detenerlo.</p>
+<p>El recorrido termina cuando lo pausás, retirás el consentimiento o ya no quedan tareas pendientes. El recorrido activo no se reanuda automáticamente al reiniciar el teléfono o después de que Android detenga el proceso. Si autorizaste la detección de zonas y conservás tareas pendientes, intentaremos restaurarla al reiniciar o actualizar la app. Una detención forzada puede requerir que vuelvas a abrirla. Los avisos dependen de la señal, conectividad y restricciones del equipo.</p>
+<p>Si elegís confirmación, al detectar una salida con tareas pendientes te preguntaremos si querés iniciar. Si elegís automático, lo iniciaremos sin otra pregunta. Sin pendientes no se registran zonas para detectar salidas. Podés pausar el recorrido sin apagar la detección; “Desactivar toda la automatización” detiene ambos. La llegada se considera tras permanecer unos 2 minutos dentro de una zona, y los eventos pueden demorarse por restricciones de Android.</p>
+<h2>4. Qué se envía a terceros</h2>
+<p>Para obtener la ubicación actual al guardar un lugar y para detectar entradas y salidas, utilizamos Google Play services. La detección registra coordenadas, radios e identificadores aleatorios de las zonas en ese servicio; no enviamos sus nombres. Esto se informa antes de solicitar permisos y se administra bajo las prácticas de Google: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+<p>Las consultas se envían mediante HTTPS a overpass-api.de, un servicio externo que consulta datos de OpenStreetMap. Cada consulta contiene las coordenadas del área de búsqueda y las categorías correspondientes a tareas pendientes. El proveedor también recibe la dirección IP de la conexión y datos técnicos de la solicitud. Las categorías pueden revelar intereses o necesidades, aunque no enviamos los títulos ni identificadores de tus tareas.</p>
+<p>El proveedor procesa la consulta para devolver lugares. DePasada no opera ese servidor ni puede garantizar o modificar su conservación de registros. Borrar datos en esta app no retira consultas ya recibidas por terceros.</p>
+<p>Cuando elegís “Cómo llegar”, enviamos el nombre y las coordenadas del destino a la aplicación de mapas que abra Android. Esa aplicación y el servicio de ubicación del sistema tienen sus propias prácticas de privacidad. Los enlaces externos se abren bajo las políticas del sitio correspondiente.</p>
+<h2>5. Publicidad, venta de datos y permisos</h2>
+<p>Esta versión no integra anuncios, herramientas de analítica ni compras. No vendemos tus datos. No solicitamos acceso a contactos, micrófono, cámara ni archivos personales. Utilizamos internet, ubicación y notificaciones para las funciones descritas. Si se incorporan nuevos usos de datos, se actualizarán la política y los avisos antes de activarlos, y se solicitará el consentimiento que corresponda.</p>
+<h2>6. Conservación y borrado</h2>
+<p>Las tareas se conservan hasta que las eliminás o borrás todos los datos. La última ubicación y los lugares permanecen hasta que se reemplazan o se eliminan; pausar un recorrido no los borra.</p>
+<p>Desde “Privacidad y datos” podés:</p>
+<ul><li>Retirar el consentimiento: detiene el seguimiento, borra ubicación, comercios encontrados y zonas guardadas (casa, trabajo u otras), desactiva la detección y conserva tus tareas. Para volver a activar el recorrido deberás aceptar nuevamente el aviso.</li><li>Borrar todos mis datos: detiene el recorrido y elimina tareas, ubicación, comercios encontrados, zonas guardadas y consentimiento local.</li><li>Abrir los ajustes de Android para administrar los permisos.</li></ul>
+<p>También podés borrar el almacenamiento de la app o desinstalarla. Estas acciones no eliminan posibles registros que ya tenga el proveedor externo. No hay cuentas que debas cerrar.</p>
+<h2>7. Seguridad</h2>
+<p>Las consultas al proveedor utilizan HTTPS. Los datos locales se guardan en el almacenamiento privado de la aplicación y se ha deshabilitado su inclusión en las copias y transferencias configuradas por la app. No ofrecemos cifrado propio de extremo a extremo. La protección del equipo y sus copias depende también de Android, del fabricante y de tus ajustes.</p>
+<p>Las notificaciones de tareas se marcan como privadas y tienen una versión genérica para la pantalla bloqueada. Android y tus preferencias determinan qué se muestra; podés desactivar o limitar notificaciones desde los ajustes.</p>
+<h2>8. Alcance del servicio</h2>
+<p>La cercanía no garantiza que el local esté abierto, tenga stock o preste un servicio particular. Las distancias son aproximadas y en línea recta. Las ilustraciones no representan tu ubicación real. Los datos de lugares provienen de © OpenStreetMap contributors y están sujetos a ODbL: <a href="https://www.openstreetmap.org/copyright">https://www.openstreetmap.org/copyright</a></p>
+<h2>9. Responsable, contacto y cambios</h2>
+<p>Responsable: Sebastián Torres. Para consultas o solicitudes sobre tus datos que no puedas resolver desde la app, escribí a <a href="mailto:sebag.torres@gmail.com">sebag.torres@gmail.com</a>.</p>
+<p>Como la app no tiene cuentas ni servidor propio, no podemos identificarte ni acceder a los datos guardados en tu teléfono; las solicitudes sobre consultas ya enviadas a terceros deben dirigirse a esos proveedores.</p>
+<p>La fecha y versión de este documento identifican los cambios; publicaremos cada nueva versión en la app y en su página pública. Una actualización material del uso de ubicación requerirá renovar el aviso antes de continuar el recorrido.</p>
+</main></body>
+</html>
